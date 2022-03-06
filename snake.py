@@ -21,6 +21,9 @@ font_style=pygame.pygame.font.SysFont(None, 13)
 game_over=False
 
 x1= 300
+y1= 300
+
+x1_change= 0
 y1_change= 0
 
 clock=pygame.time.Clock()
@@ -43,10 +46,10 @@ while not game_over:
                 y1_change= 10
                 x1_change= 0
 
- x1 += x1_change
+    x1 += x1_change
     y1 += y1_change
 
-    dis.fill(white)
+    dis.fill(white)    
     pygame.draw.rect(dis,black, [x1, y1, 10, 10])
     pygame.display.update()
 
